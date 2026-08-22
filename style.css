@@ -1,0 +1,543 @@
+/* ==========================
+   GOOGLE FONT
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #08111f;
+    color: #fff;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background: rgba(8, 17, 31, .92);
+    backdrop-filter: blur(12px);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #ff6247;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 35px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: .4s;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #ff6247;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 10%;
+}
+
+.left {
+    width: 50%;
+}
+
+.left h3 {
+    font-size: 34px;
+}
+
+.left h3 span {
+    color: #ff6247;
+}
+
+.left h2 {
+    margin-top: 15px;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.left h2 span {
+    color: #ffffff;
+}
+
+.left h1 {
+    margin-top: 20px;
+    font-size: 62px;
+    color: white;
+}
+
+.left p {
+    margin-top: 25px;
+    color: #b9b9b9;
+    line-height: 32px;
+    width: 90%;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.buttons {
+    margin-top: 40px;
+}
+
+.btn1,
+.hire-btn1,
+.btn2 {
+
+    padding: 14px 35px;
+    border: 2px solid #ff6247;
+    font-size: 17px;
+    cursor: pointer;
+    transition: .4s;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn1,
+.hire-btn1 {
+
+    background: #ff6247;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.btn1 a,
+.hire-btn1 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.btn1:hover,
+.hire-btn1:hover {
+
+    box-shadow: 0 0 20px #ff6247;
+}
+
+.btn2 {
+
+    background: transparent;
+    border: 2px solid #ff6247;
+    color: #fff;
+}
+
+.btn2:hover {
+
+    background: #ff6247;
+}
+
+/* ==========================
+   SOCIAL
+========================== */
+
+.social {
+
+    margin-top: 40px;
+}
+
+.social a {
+
+    color: white;
+    font-size: 25px;
+    margin-right: 20px;
+    transition: .4s;
+}
+
+.social a:hover {
+
+    color: #ff6247;
+    text-shadow: 0 0 15px #ff6247;
+}
+
+/* ==========================
+   RIGHT IMAGE
+========================== */
+
+.right {
+
+    width: 45%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+
+    width: 420px;
+    height: 420px;
+    border: 18px solid #ff6247;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 0 60px rgba(255, 98, 71, .35);
+}
+
+.right img {
+
+    width: 360px;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    z-index: 5;
+    filter: drop-shadow(0 0 30px #ff6247);
+}
+
+/* ==========================
+   SECTION TITLE
+========================== */
+
+section {
+
+    padding: 90px 10%;
+}
+
+.title {
+
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 50px;
+    color: #ff6247;
+}
+
+/* ==========================
+   ABOUT
+========================== */
+
+.about-box {
+
+    background: #101b2c;
+    border-radius: 15px;
+    padding: 40px;
+    line-height: 34px;
+    color: #d8d8d8;
+    border: 1px solid rgba(255, 98, 71, .2);
+}
+
+/* ==========================
+   SKILLS
+========================== */
+
+.skills-container {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.skill-card {
+
+    background: #101b2c;
+    padding: 35px;
+    text-align: center;
+    border-radius: 15px;
+    transition: .4s;
+    border: 1px solid rgba(255, 98, 71, .25);
+}
+
+.skill-card i {
+
+    font-size: 55px;
+    color: #ff6247;
+}
+
+.skill-card h3 {
+
+    margin-top: 20px;
+}
+
+.skill-card:hover {
+
+    transform: translateY(-12px);
+    box-shadow: 0 0 30px rgba(255, 98, 71, .5);
+}
+
+/* ==========================
+   PROJECTS
+========================== */
+
+.project-container {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+}
+
+.project-card {
+
+    background: #101b2c;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: .4s;
+    border: 1px solid rgba(255, 98, 71, .25);
+}
+
+.project-card img {
+
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.project-card h3 {
+
+    padding: 20px;
+}
+
+.project-card p {
+
+    padding: 0 20px 20px;
+    color: #ccc;
+}
+
+.project-card a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.project-card button {
+
+    margin: 20px;
+    padding: 12px 30px;
+    background: #ff6247;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.project-card:hover {
+
+    transform: translateY(-10px);
+    box-shadow: 0 0 35px rgba(255, 98, 71, .5);
+}
+
+/* ==========================
+   CONTACT
+========================== */
+
+form {
+
+    max-width: 700px;
+    margin: auto;
+}
+
+form input,
+form textarea {
+
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 98, 71, 0.2);
+    border-radius: 8px;
+    background: #101b2c;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #ff6247;
+    box-shadow: 0 0 10px rgba(255, 98, 71, 0.3);
+}
+
+form textarea {
+
+    height: 180px;
+    resize: none;
+}
+
+form button {
+
+    width: 100%;
+    padding: 18px;
+    border: none;
+    background: #ff6247;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+
+    box-shadow: 0 0 25px #ff6247;
+}
+
+.form-status {
+    display: none;
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+    padding: 16px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.6;
+    background: #101b2c;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.form-status.loading {
+    display: block;
+    color: #ffd166;
+    border-color: rgba(255, 209, 102, 0.4);
+    background: rgba(255, 209, 102, 0.1);
+}
+
+.form-status.success {
+    display: block;
+    color: #4ade80;
+    border-color: rgba(74, 222, 128, 0.4);
+    background: rgba(74, 222, 128, 0.1);
+}
+
+.form-status.error {
+    display: block;
+    color: #f87171;
+    border-color: rgba(248, 113, 113, 0.4);
+    background: rgba(248, 113, 113, 0.1);
+}
+
+.form-status.info {
+    display: block;
+    color: #60a5fa;
+    border-color: rgba(96, 165, 250, 0.4);
+    background: rgba(96, 165, 250, 0.1);
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer {
+
+    text-align: center;
+    padding: 30px;
+    color: #aaa;
+    background: #050b15;
+}
+
+/* ==========================
+   ANIMATION
+========================== */
+
+@keyframes rotate {
+
+    from {
+
+        transform: rotate(0deg);
+    }
+
+    to {
+
+        transform: rotate(360deg);
+    }
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:900px) {
+
+    .hero {
+
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .left,
+    .right {
+
+        width: 100%;
+    }
+
+    .left {
+
+        margin-top: 60px;
+    }
+
+    .left p {
+
+        width: 100%;
+    }
+
+    .right img {
+
+        width: 260px;
+        height: 260px;
+    }
+
+    .circle {
+
+        width: 300px;
+        height: 300px;
+    }
+
+    nav {
+
+        padding: 20px;
+    }
+
+    nav ul {
+
+        display: none;
+    }
+
+    .left h1 {
+
+        font-size: 42px;
+    }
+
+    .left h2 {
+
+        font-size: 34px;
+    }
+
+}
